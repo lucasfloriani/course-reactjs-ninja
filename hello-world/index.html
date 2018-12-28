@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <div id="app"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+
+  <script>
+    // console.log(React)
+
+    // Diferente do comando document.createElement, pois não cria um elemento
+    // do dom, mas sim um objeto comum utilizado pelo React para operações como
+    // manipulação do Virtual DOM.
+    // Ou seja, Elemento React !== Elemento DOM.
+    //
+    // Primeiro parâmetro = Tipo do elemento
+    // Segundo parâmetro = Propriedades do elemento
+    // Primeiro parâmetro = Conteúdo
+    var h1 = React.createElement('h1', null, 'Hello h1 React')
+    console.log(h1);
+
+    // Primeiro parâmetro = Elemento React que vai ser renderizado
+    // Segundo parâmetro = Onde vai ser renderizado
+    ReactDOM.render(h1, document.getElementById('app'))
+  </script>
+</body>
+</html>
