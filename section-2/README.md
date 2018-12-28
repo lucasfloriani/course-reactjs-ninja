@@ -26,3 +26,9 @@
 * Adicionar o _publicPath_ no webpack.config;
 * Passar o caminho correto no index.html;
 * Subir o server de desenvolvimento.
+
+## Modularizando uma aplicação
+
+* Criar um novo arquivo em src/app.js;
+* Entender o require e o module.exports do CommonJS;
+* Exportar um método _sum_, que irá somar dois valores;

@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -42,9 +42,25 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'user strict'
+
+	var sum = __webpack_require__(1)
+
+	console.log(sum(1, 2))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-	console.log('webpack está funcionando')
+	'use strict'
+
+	function sum(val1, val2) {
+	  return val1 + val2
+	}
+
+	module.exports = sum
 
 /***/ })
 /******/ ]);
