@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+  <!--
+    Type text/babel para renderizar o JSX usando a biblioteca bebel
+   -->
+  <script type="text/babel">
+    // ===== React.DOM.tag =====
+    // Forma mais restrita de criar elementos no React (Antiga)
+    // Limitado a algumas tags
+    // var h1 = React.DOM.h1(null, [
+    //   React.DOM.span(null, React.DOM.i(null, 'Itálico')),
+    //   React.DOM.span(null, 'Texto do span 2')
+    // ])
+    // ReactDOM.render(h1, document.getElementById('app'))
+
+    // ===== JSX =====
+    // É uma forma de escrever React.createElement só que de uma
+    // forma mais visual, sendo necessário assim sua compilação antes
+    // de renderizar, transformando-se para createElement
+    ReactDOM.render(
+      <h1>Hello World</h1>,
+      document.getElementById('app')
+    )
+  </script>
+</body>
+</html>
