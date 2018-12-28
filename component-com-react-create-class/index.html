@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+  <script type="text/babel">
+    // Componentes criados com react por convensão,
+    // são criados com letra Maiúscula, diferenciando assim
+    // das tags padrões que são minusculas
+    //
+    // Primeiro parâmetro = Objeto com no mínimo o metodo render
+    var Title = React.createClass({
+      render: function () {
+        // Parenteses usado para organizar o código JSX
+        //
+        // Deve retornar soment um elemento pai, não podendo ter 2
+        // elementos adjacentes, pois reconhece como sendo
+        // duas funções retornando e ele não aceita isto
+        // Para solucionar este problema, é possível envolver
+        // as tag com outra tag, como por exemplo a tag <div>
+        return (
+          <h1>
+            <span>Hello World Title</span>
+          </h1>
+        )
+      }
+    })
+
+    ReactDOM.render(
+      <Title />,
+      document.getElementById('app')
+    )
+  </script>
+</body>
+</html>
