@@ -19,3 +19,10 @@
 * Criar o arquivo src/index.js
 * Gerar o bundle
 * Criar o arquivo index.html e adicionar bundle.js
+
+## Usando o server do Webpack
+
+* Instalar a dependência para o server - webpack-dev-server;
+* Adicionar o _publicPath_ no webpack.config;
+* Passar o caminho correto no index.html;
+* Subir o server de desenvolvimento.
